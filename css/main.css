@@ -1,0 +1,169 @@
+/*container 영역*/
+
+@charset "utf-8";
+
+/*메인슬라이더 이미지로 만드는 방법*/
+/*.mainSlider{
+    height:480px;
+    position:relative;
+    overflow:hidden;
+}
+.mainSlider img{
+    position:absolute;
+    left:50%;
+    margin-left:-960px;
+}*/
+
+/*이미지 태그로 메인슬라이더 중앙정렬로 잡는 방법
+메인슬라이더 absolute로 띄움 그러면 부모영역은 닫히면서 height값이 0이 되기때문에 부모 영역에 이미지만한 height값을 줘야함 그 이후 크기가 다른 화면에도 같은 중아정렬 비율을 유지하기 위해 중앙정렬을 시켜줘야함 
+그래서 left 50%를 주고 그 이미지의 반 만큼 빼주면 중앙으로 정렬이됨
+하지만 포지션값을 부모영역에 relative시겨야하고 나머지 부분을 가리기 위해 overflow:hidden을 주면됨 
+border-top으로 빨간선을 줌*/
+
+/*메인슬라이더 백그라운드 방법*/
+.mainSlider{
+    height:480px;
+    background:url(../images/mainBanner_201710310442383740.jpg)
+    no-repeat center center;
+    text-indent:-9999px;
+    margin-top:10px;/*선기준 안쪽은 패딩 바깥쪽은 마진값 줘야함*/
+    border-top:2px solid #7a2f36;
+}
+
+/*메인컨텐츠1*/
+.mainCon01{
+       padding-top:50px;
+}
+
+.con01{
+    width:205px;
+    margin-right:35px;
+    float:left;
+}
+.con01 h3{}
+.con01 h3 img{}
+
+.mall{
+    width:460px;
+    font-size:13px;
+}
+.mall p{
+    margin:10px 0;
+}
+.store{
+    margin-right:0;
+}
+.mallMenu{}
+.mallMenu li{
+    float:left;
+    text-align:center;
+    padding:0 20px;
+    background:url(../images/mall_bar01.gif) no-repeat right center;
+    margin-top:30px;
+}
+.mallMenu li:last-child{
+    background:none;
+}
+.mallMenu li a{
+    color:#555;
+}
+.mallMenu li img{display:block;}
+
+/*mainCon02*/
+.mainCon02{}
+.mainCon02 div{float:left;}
+.mainCon02 img {display:block;}
+
+/*mainCon03*/
+.mainCon03{
+    padding:50px 0;
+    border-bottom:2px solid #7a2f36;
+    margin-bottom:30px;
+}
+
+.con03{
+    width:205px;
+    margin-right:35px;
+    float:left;
+    font-size:12px;
+}
+.con03:last-child{
+    margin-right:0;
+}
+.con03 h3{}
+.con03 h3 img{vertical-align:middle;}
+
+.con03 p{
+    margin:10px 0;
+}
+
+.moreBtn{}
+.moreBtn img,.moreBtn span{
+    vertical-align:middle;
+}
+
+.newsList{
+    margin-top:10px;
+}
+.newsList li{
+    position:relative;
+    line-height:18px;
+}
+.newsList li a{
+    width:150px;
+    display:inline-block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.newsList li span{
+    position:absolute;
+    top:0;
+    right:0;
+    
+}
+
+.con03Quick{}
+.con03Quick li{
+    float:left;
+    padding:0 5px;
+    background:url(../images/mall_bar01.gif) no-repeat;
+}
+.con03Quick li:first-child{
+    background:none;
+}
+.con03Quick li a{}
+.con03Quick li img{
+    display:block;
+    margin:0 auto;
+}
+
+/*maimCon04*/
+.mainCon04{}
+.mainCon04 h2{}
+.mainCon04 h2 img{}
+.mainCon04 h2 a{
+    vertical-align:middle;
+}
+
+.liveList{
+    margin-top:30px;
+}
+.liveList li{
+    font-size:13px;
+    width:205px;
+    margin-right:35px;
+    float:left;
+    background:url(../images/48_48.png) no-repeat left center;
+    padding-left:60px;
+    box-sizing:border-box;
+}
+.liveList li:last-child{
+    margin-right:0;
+}
+.liveList li:hover{
+    background-image:url(../images/48_48_on.png);
+}
+.liveList li a{}
+.liveList li span{color:#36f;}
+.liveList li p{}

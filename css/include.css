@@ -1,0 +1,123 @@
+/*모든 페이지에 공통으로 들어가는요소 ex)헤더와 푸터*/
+
+@charset "utf-8";
+
+/*헤더*/
+#header{
+    position:relative;
+}
+
+#header h1{
+    text-align:center;/*이미지가 인라인 속성이기 때문에 text-align이 먹힘. 전체영역을 차지하는 부모에다가 */
+    padding-top:50px;
+}
+#header h1 a{}
+#header h1 img{}
+
+.utilL{
+    position:absolute;
+}
+.utilL li{
+    float:left;
+    width:99px;
+    height:76px;
+    text-align:center;
+}
+.utilL li a{
+    display:block;
+    height:100%;
+}
+.utilL li img{}
+.utilL li:last-child img{
+    padding-top:20px;
+}
+/*.utilLAca img{
+    padding-top:20px;
+}*/
+
+.utilR{
+    position:absolute;
+    right:0;
+    top:20px;
+}
+.utilR li{
+    float:left;
+    margin-left:15px;
+}
+.utilR li a{}
+.utilR li img{}
+
+.gnb{
+    text-align:center;
+    margin-top:10px;
+}
+.gnb>li{
+    display:inline-block;
+    padding:0 30px;
+    position:relative;
+}
+.gnb li{
+}
+.gnb li a{}
+.gnb li img{}
+
+.lnb{
+    position:absolute;
+    background:#fff;
+    left:0;
+    line-height:30px;
+    width:100%;
+    display:none;
+}
+.lnb li{
+}
+.lnb li a{
+}
+
+/*호버*/
+.gnb .on{display:none;}
+.gnb li:hover .on{display:block;}
+.gnb li:hover .off{display:none;}
+.gnb li:hover .lnb{display:block;}
+/*footer*/
+
+#footer{
+    background:url(../images/bg_footer.gif);
+    color:#de898e;
+    padding:50px 0;
+    margin-top:80px;
+    
+}
+
+/*after은 무조건 float없애기만하는 건 아니고 태그 가상요소, 유령요소를 만드는 요소*/
+
+.fMenu{
+    margin-bottom:20px;
+}
+.fMenu li {
+    float:left;
+}
+.fMenu li::after{
+    content:"";
+    display:inline-block;
+    width:1px;
+    height:12px;
+    background:#fff;
+    margin:0 5px;
+}
+
+.fMenu li:last-child::after{
+    display:none;
+}
+
+.fMenu li  a{
+    color:#fff;
+}
+
+.fMenu li:hover a{
+    text-decoration:underline;
+    color:cornsilk;
+}
+.fInfo{
+    font-size:11px;
+}

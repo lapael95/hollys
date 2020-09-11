@@ -1,0 +1,31 @@
+/*기본값 설정은 default*/
+
+@charset "utf-8";
+
+/*reset css 기본*/
+
+body,h1,h2,h3,h4,h5,h6,p{
+    margin:0;    
+}
+
+ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+a{
+    text-decoration:none;
+    color:#222;
+}
+.inner{
+    width:940px;
+    margin:0 auto;
+}
+
+.cf::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
